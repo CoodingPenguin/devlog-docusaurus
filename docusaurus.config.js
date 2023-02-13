@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'ko',
-    locales: ['ko'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -39,9 +39,8 @@ const config = {
       ({
         docs: {
           path: 'wiki',
-          routeBasePath: 'wiki',
+          routeBasePath: '/wiki',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           blogSidebarCount: 'ALL',
@@ -55,10 +54,9 @@ const config = {
             copyright: `Copyright © ${new Date().getFullYear()} 코딩하는펭귄(CoodingPenguin)`,
             language: 'ko',
           },
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/global.css'),
         },
       }),
     ],
@@ -78,9 +76,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'how-to-write-dev-wiki',
+            docId: 'intro',
+            label: '📚 개발위키',
             position: 'left',
-            label: '📄 개발위키',
           },
           {
             to: '/blog',

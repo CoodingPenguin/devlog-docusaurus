@@ -16,30 +16,28 @@ html {
 
 /* 2. Infima 변수의 기본값 오버라이드 */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 90%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #5465ff;
+  --ifm-color-primary-dark: #4d5fff;
+  --ifm-color-primary-darker: #4356ff;
+  --ifm-color-primary-darkest: #354aff;
+  --ifm-color-primary-light: #6271ff;
+  --ifm-color-primary-lighter: #6f7dff;
+  --ifm-color-primary-lightest: #7d8aff;
   --ifm-navbar-item-padding-horizontal: 1rem;
-  --ifm-font-size-base: 110%;
   --ifm-code-padding-horizontal: 0.375rem;
   --ifm-code-padding-vertical: 0.25rem;
+  --ifm-navbar-padding-horizontal: 8px;
 }
 
 /* 다크 모드의 경우 라이트 모드보다 더 밝은 색을 선택하는 게 좋음 */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #788bff;
+  --ifm-color-primary-dark: #7185ff;
+  --ifm-color-primary-darker: #6278ff;
+  --ifm-color-primary-darkest: #4b64ff;
+  --ifm-color-primary-light: #8091ff;
+  --ifm-color-primary-lighter: #8f9eff;
+  --ifm-color-primary-lightest: #9eabff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -55,7 +53,11 @@ html {
 }
 
 .navbar__brand {
-  margin-right: 2rem;
+  padding-right: 1.25rem;
+}
+
+.navbar__items .navbasr__item {
+  padding-right: 1.125rem;
 }
 
 .navbar__brand .navbar__title {
@@ -118,10 +120,18 @@ html {
   font-size: 2rem !important;
 }
 
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: ' →';
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before {
+  content: '← ';
+}
+
 /* 3.3. 인라인 코드 */
 code {
   border: none;
-  color: var(--ifm-color-primary-dark);
+  color: #ff686b;
   margin: 0 0.125rem;
   font-family: 'Fira Code', "Pretendard Variable", Pretendard, -apple-system, monospace;
 }
