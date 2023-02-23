@@ -32,6 +32,19 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ]
+  ],
+
   presets: [
     [
       'classic',
@@ -46,7 +59,7 @@ const config = {
           blogSidebarCount: 'ALL',
           blogSidebarTitle: '🤔 생각 중',
           postsPerPage: 3,
-          showReadingTime: true,
+          showReadingTime: false,
           feedOptions: {
             type: 'all',
             title: '코딩하는펭귄의 생각모음',
