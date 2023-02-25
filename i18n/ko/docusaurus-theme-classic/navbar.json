@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "코딩하는펭귄의 저장소",
+    "description": "The title in the navbar"
+  },
+  "item.label.📚 개발위키": {
+    "message": "📚 개발위키",
+    "description": "Navbar item with label 📚 개발위키"
+  },
+  "item.label.✍️ 끄적끄적": {
+    "message": "✍️ 끄적끄적",
+    "description": "Navbar item with label ✍️ 끄적끄적"
+  }
+}

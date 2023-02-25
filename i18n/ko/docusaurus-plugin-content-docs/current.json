@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.📁 JSON": {
+    "message": "📁 JSON",
+    "description": "The label for category 📁 JSON in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.📁 Python": {
+    "message": "📁 Python",
+    "description": "The label for category 📁 Python in sidebar tutorialSidebar"
+  }
+}
