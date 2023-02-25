@@ -54,12 +54,9 @@
   align-content: center;
 }
 
-.navbar__brand {
+.navbar__brand,
+.navbar__items .navbar__item {
   padding-right: 1.25rem;
-}
-
-.navbar__items .navbasr__item {
-  padding-right: 1.125rem;
 }
 
 .navbar__brand .navbar__title {
