@@ -31,8 +31,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ko',
+    locales: ['ko'],
   },
 
   plugins: [pluginImageZoom],
@@ -51,13 +51,13 @@ const config = {
         },
         blog: {
           blogSidebarCount: 'ALL',
-          blogSidebarTitle: '🤔 생각 중',
+          blogSidebarTitle: '끄적이는 중',
           postsPerPage: 3,
           showReadingTime: false,
           feedOptions: {
             type: 'all',
-            title: '코딩하는펭귄의 생각모음',
-            description: '코딩하는펭귄은 생각 중',
+            title: '코딩하는펭귄의 끄적끄적',
+            description: '코딩하는펭귄은 글쓰는 중',
             copyright: `Copyright © ${new Date().getFullYear()} 코딩하는펭귄(CoodingPenguin)`,
             language: 'ko',
           },
@@ -91,7 +91,7 @@ const config = {
           },
           {
             to: '/blog',
-            label: '💭 생각모음',
+            label: '✍️ 끄적끄적',
             position: 'left'
           },
           {
