@@ -86,8 +86,7 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            to: '/wiki',
             label: '📚 개발위키',
             position: 'left',
           },
