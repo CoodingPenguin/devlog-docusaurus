@@ -106,7 +106,8 @@
 }
 
 /* 3.2. 마크다운 본문 */
-.markdown h1:first-child {
+.markdown h1:first-child,
+.container header h1 {
   --ifm-h1-font-size: 2rem !important;
 }
 
