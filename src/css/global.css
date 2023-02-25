@@ -108,14 +108,8 @@
   background-image: url("/static/img/instagram_white.svg") ;
 }
 
-.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module.colorModeToggle_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Content-styles-module {
-  width: 24px;
-  height: 24px;
-}
-
 /* 3.2. 마크다운 본문 */
-.markdown h1:first-child,
-.title_node_modules-\@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module {
+.markdown h1:first-child {
   --ifm-h1-font-size: 2rem !important;
 }
 
@@ -127,7 +121,8 @@
   --ifm-h3-font-size: 1.25rem;
 }
 
-.title_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-Header-Title-styles-module {
+.main-wrapper .container article header h1,
+.main-wrapper .container article header h2 {
   font-size: 2rem !important;
 }
 
