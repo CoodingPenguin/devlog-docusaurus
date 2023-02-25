@@ -1,8 +1,11 @@
 // @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const remarkMath = require('remark-math');
+const rehypeKatex = require('rehype-katex');
+const pluginImageZoom = require('docusaurus-plugin-image-zoom');
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -32,18 +35,7 @@ const config = {
     locales: ['en'],
   },
 
-  plugins: [
-    [
-      '@docusaurus/plugin-ideal-image',
-      {
-        quality: 70,
-        max: 1030, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
-        disableInDev: false,
-      },
-    ]
-  ],
+  plugins: [pluginImageZoom],
 
   presets: [
     [
@@ -54,6 +46,8 @@ const config = {
           path: 'wiki',
           routeBasePath: '/wiki',
           sidebarPath: require.resolve('./sidebars.js'),
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: {
           blogSidebarCount: 'ALL',
@@ -67,6 +61,8 @@ const config = {
             copyright: `Copyright © ${new Date().getFullYear()} 코딩하는펭귄(CoodingPenguin)`,
             language: 'ko',
           },
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         theme: {
           customCss: require.resolve('./src/css/global.css'),
@@ -118,6 +114,16 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          background: {
+            light: 'rgb(255, 255, 255)',
+            dark: 'rgb(50, 50, 50)'
+          }
+        }
+      }
     }),
 };
 
