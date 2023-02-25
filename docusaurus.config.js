@@ -50,6 +50,8 @@ const config = {
           rehypePlugins: [rehypeKatex],
         },
         blog: {
+          path: 'essay',
+          routeBasePath: '/essay',
           blogSidebarCount: 'ALL',
           blogSidebarTitle: '끄적이는 중',
           postsPerPage: 3,
@@ -90,7 +92,7 @@ const config = {
             position: 'left',
           },
           {
-            to: '/blog',
+            to: '/essay',
             label: '✍️ 끄적끄적',
             position: 'left'
           },
