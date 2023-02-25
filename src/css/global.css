@@ -152,6 +152,11 @@ blockquote {
   font-style: italic;
 }
 
+[data-theme='dark'] blockquote {
+  color: white;
+  opacity: 75%;
+}
+
 del {
   color: rgba(0, 0, 0, 0.6);
   text-decoration-color: rgba(0, 0, 0, 0.3);
