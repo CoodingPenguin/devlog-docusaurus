@@ -155,6 +155,11 @@ del {
   text-decoration-color: rgba(0, 0, 0, 0.3);
 }
 
+[data-theme='dark'] del {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
 del:hover {
   text-decoration: none;
 }
