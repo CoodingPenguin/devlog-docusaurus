@@ -140,6 +140,14 @@ code {
   font-family: 'Fira Code', "Pretendard Variable", Pretendard, -apple-system, monospace;
 }
 
+.theme-code-block {
+  box-shadow: none !important;
+}
+
+.theme-code-block pre > code {
+  min-width: 99% !important;
+}
+
 /* 3.4. 인용 */
 blockquote {
   font-style: italic;
