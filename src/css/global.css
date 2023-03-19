@@ -24,6 +24,7 @@
   --ifm-code-padding-vertical: 0.25rem;
   --ifm-navbar-padding-horizontal: 8px;
   --ifm-blockquote-border-left-width: 6px;
+  --ifm-font-size-base: 100%;
   --ifm-line-height-base: 1.8;
   --ifm-blockquote-color: #57606a;
   --ifm-font-family-base: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -48,14 +49,19 @@
   font-weight: bold;
 }
 
-.navbar__brand, .navbar__link {
+.navbar__brand,
+.navbar__link {
   display: flex;
   align-content: center;
 }
 
 .navbar__brand,
 .navbar__items .navbar__item {
-  padding-right: 1.0rem;
+  padding-right: 1.25rem;
+}
+
+.navbar__brand {
+  margin-right: 0;
 }
 
 .navbar__brand .navbar__title {
