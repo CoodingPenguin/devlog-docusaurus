@@ -1,41 +1,31 @@
-# Website
+<div align='center'>
+    <img src='./static/img/social-card.png' alt='social card' width='80%'/>
+    <h1>코딩하는펭귄의 저장소</h1>
+    <p>코딩하는펭귄의 개발 이모저모</p>
+    <img src='https://img.shields.io/github/deployments/coodingpenguin/devlog/production?color=90be6d&label=vercel&logo=vercel&logoColor=white&style=for-the-badge' alt='deployment'/>
+    <img src='https://img.shields.io/github/last-commit/coodingpenguin/devlog?color=f94144&logo=git&logoColor=white&style=for-the-badge' alt='last github commit'/>
+    <img src='https://img.shields.io/github/stars/coodingpenguin/devlog?color=ffca3a&logo=github&logoColor=white&style=for-the-badge'/>
+</div>
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+---
+
+## 🚀 Getting Started
 
 ### Installation
 
-```
-$ yarn
+```bash
+$ npm install
 ```
 
 ### Local Development
 
+```bash
+$ npm start
 ```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+$ npm build
 ```
 
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
