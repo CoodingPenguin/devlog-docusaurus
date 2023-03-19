@@ -1,6 +1,7 @@
 {
   "label": "📁 Python",
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/category/python"
   }
 }
