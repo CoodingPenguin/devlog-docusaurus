@@ -80,6 +80,9 @@ const config = {
             '/wiki/tags/**'
           ],
           filename: 'sitemap.xml',
+        },
+        gtag: {
+          trackingID: 'G-53DQ06C3MB'
         }
       }),
     ],
