@@ -35,7 +35,9 @@ const config = {
     locales: ['ko'],
   },
 
-  plugins: [pluginImageZoom],
+  plugins: [
+    pluginImageZoom,
+  ],
 
   presets: [
     [
@@ -69,6 +71,12 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/global.css'),
         },
+        sitemap: {
+          changefreq: 'daily',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        }
       }),
     ],
   ],
