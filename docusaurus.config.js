@@ -11,7 +11,7 @@ const pluginImageZoom = require('docusaurus-plugin-image-zoom');
 const config = {
   title: '코딩하는펭귄의 저장소',
   tagline: '코딩하는펭귄의 개발 이모저모',
-  favicon: 'img/favicon.ico',
+  favicon: '/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://coodingpenguin.xyz',
@@ -87,12 +87,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/social-card.png',
+      image: '/social-card.png',
       navbar: {
         title: '코딩하는펭귄의 저장소',
         logo: {
           alt: 'CoodingPenguin Devlog Logo',
-          src: 'img/logo.png',
+          src: '/logo.png',
         },
         items: [
           {

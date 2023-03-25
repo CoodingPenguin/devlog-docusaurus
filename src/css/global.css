@@ -95,19 +95,19 @@
 }
 
 .header-github-link::before {
-  background-image: url("/static/img/github-black.svg");
+  background-image: url("/static/icon/github-black.svg");
 }
 
 [data-theme='dark']  .header-github-link::before {
-  background-image: url("/static/img/github-white.svg");
+  background-image: url("/static/icon/github-white.svg");
 }
 
 .header-instagram-link::before {
-  background-image: url("/static/img/instagram-black.svg") ;
+  background-image: url("/static/icon/instagram-black.svg") ;
 }
 
 [data-theme='dark'] .header-instagram-link::before {
-  background-image: url("/static/img/instagram-white.svg") ;
+  background-image: url("/static/icon/instagram-white.svg") ;
 }
 
 /* 3.2. 마크다운 본문 */

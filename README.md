@@ -1,5 +1,5 @@
 <div align='center'>
-    <img src='./static/img/social-card.png' alt='social card' width='80%'/>
+    <img src='./static/social-card.png' alt='social card' width='80%'/>
     <h1>코딩하는펭귄의 저장소</h1>
     <p>코딩하는펭귄의 개발 이모저모</p>
     <img src='https://img.shields.io/github/deployments/coodingpenguin/devlog/production?color=90be6d&label=vercel&logo=vercel&logoColor=white&style=for-the-badge' alt='deployment'/>
