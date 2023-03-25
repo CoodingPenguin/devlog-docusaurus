@@ -145,8 +145,10 @@
 /* 3.3. 인라인 코드 */
 code {
   border: none;
-  color: #ff686b;
+  color: #eb5757;
   margin: 0 0.125rem;
+  font-size: 85%;
+  background: rgba(135,131,120,0.15);
   font-family: 'Fira Code', "Pretendard Variable", Pretendard, -apple-system, monospace;
 }
 
