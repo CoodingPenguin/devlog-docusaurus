@@ -11,9 +11,37 @@ type FigureProps = {
 }
 
 const Figure = ({src, caption, captionLink, alt, hasBorder = false}: FigureProps) => (
-  <figure style={{textAlign: 'center', marginLeft: 0, marginRight: 0}}>
-    <img src={useBaseUrl(src)} alt={alt || caption} style={{borderRadius: '8px', border: hasBorder ? '1px solid #dfdfdf' : 'none'}} width='100%'/>
-    <figcaption style={{fontSize: '85%', fontStyle: 'italic', opacity: '70%', fontWeight: '600'}}>
+  <figure
+    style={
+      {
+        textAlign: 'center',
+        marginLeft: 0,
+        marginRight: 0
+      }
+    }
+  >
+    <img
+      src={useBaseUrl(src)}
+      alt={alt || caption}
+      style={
+        {
+          borderRadius: '8px',
+          border: hasBorder ? '1px solid #dfdfdf' : 'none',
+          padding: hasBorder ? '12px' : 'none'
+        }
+      }
+      width='100%'
+    />
+    <figcaption
+      style={
+        {
+          fontSize: '85%',
+          fontStyle: 'italic',
+          opacity: '70%',
+          fontWeight: '600'
+        }
+      }
+    >
       {
         captionLink && isUrl(captionLink) ? (
           <div>
