@@ -77,7 +77,8 @@ const config = {
           ignorePatterns: [
             '/essay/archive',
             '/essay/tags/**',
-            '/wiki/tags/**'
+            '/wiki/tags/**',
+            '/wiki/category/**'
           ],
           filename: 'sitemap.xml',
         }
