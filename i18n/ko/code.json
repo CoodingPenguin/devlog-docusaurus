@@ -16,11 +16,11 @@
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} \"{tagName}\" 태그에 분류되었습니다",
+    "message": "#️⃣ {tagName} ({nDocsTagged})",
     "description": "The title of the page for a docs tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "모든 태그 보기",
+    "message": "👉 모든 태그 보러가기",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.docs.paginator.navAriaLabel": {
