@@ -75,9 +75,9 @@ const config = {
           changefreq: 'daily',
           priority: 0.5,
           ignorePatterns: [
-            'essay/archive',
-            'essay/tags/**',
-            'wiki/tags/**'
+            '/essay/archive',
+            '/essay/tags/**',
+            '/wiki/tags/**'
           ],
           filename: 'sitemap.xml',
         }
