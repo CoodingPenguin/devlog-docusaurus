@@ -115,12 +115,12 @@ const config = {
         items: [
           {
             to: '/wiki',
-            label: '📚 개발위키',
+            label: '개발위키',
             position: 'left',
           },
           {
             to: '/essay',
-            label: '✍️ 끄적끄적',
+            label: '끄적끄적',
             position: 'left'
           },
           {
