@@ -197,3 +197,8 @@ del:hover {
 .alert p {
   margin-bottom: 5px;
 }
+
+.table-of-contents {
+  font-size: 1.0rem;
+}
+
