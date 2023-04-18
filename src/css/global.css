@@ -29,6 +29,7 @@
   --ifm-blockquote-color: #57606a;
   --ifm-font-family-base: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --ifm-list-left-padding: 1.5rem;
+  --ifm-container-width-xxl: 1600px;
 }
 
 /* 다크 모드의 경우 라이트 모드보다 더 밝은 색을 선택하는 게 좋음 */
