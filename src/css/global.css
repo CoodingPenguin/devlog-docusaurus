@@ -12,6 +12,7 @@
 
 * {
   --ifm-container-width-xxl: 1600px;
+  max-width: 100dvw;
 }
 
 /* 2. Infima 변수의 기본값 오버라이드 */
