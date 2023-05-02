@@ -10,7 +10,7 @@ export default function BlogLayout(props) {
   const hasSidebar = sidebar && sidebar.items.length > 0;
   return (
     <Layout {...layoutProps}>
-      <div className={clsx(styles.blogLayout, 'container', 'margin-vert--lg')}>
+      <div className={clsx(styles.blogLayout, 'margin-vert--lg')}>
         <div className="row">
           <BlogSidebar sidebar={sidebar}/>
           <main
