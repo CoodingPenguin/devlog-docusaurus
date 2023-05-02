@@ -6,7 +6,7 @@ const GiscusComment = () => {
   const {colorMode} = useColorMode();
   const giscusTheme = colorMode === 'light' ? 'light' : 'dark';
   return (
-    <div style={{padding: '1rem'}}>
+    <div>
       <Giscus
         id='comments'
         repo='CoodingPenguin/devlog'

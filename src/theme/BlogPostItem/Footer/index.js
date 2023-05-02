@@ -30,7 +30,9 @@ export default function BlogPostItemFooter() {
       )}
 
       {isBlogPostPage && (
-        <GiscusComment />
+        <div style={{margin: '1rem'}}>
+          <GiscusComment /> 
+        </div>
       )}
 
       {isBlogPostPage && editUrl && (
