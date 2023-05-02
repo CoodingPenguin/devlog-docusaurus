@@ -12,6 +12,7 @@ const config = {
   title: '코딩하는펭귄의 저장소',
   tagline: '코딩하는펭귄의 개발 이모저모',
   favicon: '/favicon.ico',
+  titleDelimiter: '@',
 
   // Set the production url of your site here
   url: 'https://coodingpenguin.xyz',
@@ -104,7 +105,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      algolia: {
+        appId: '6GO6RGX99R',
+        apiKey: '54416d3dc7a6a8a8f32b019a8b562fd7',
+        indexName: 'coodingpenguin',
+        contextualSearch: true,
+        searchParameters: {},
+        searchPagePath: 'search',
+        debug: false,
+      },
       image: '/social-card.png',
       navbar: {
         title: '코딩하는펭귄의 저장소',
