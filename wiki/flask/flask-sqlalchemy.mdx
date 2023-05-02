@@ -1,0 +1,20 @@
+---
+tags: ['flask', 'sqlalchemy', 'flask-sqlalchemy']
+description: 'sqlalchemy 세팅을 쉽게 해주는 flask-sqlalchemy'
+last_update:
+  date: 2/5/2023
+---
+
+# Flask-SQLAlchemy
+
+> Flask-SQLAlchemy는 Flask에 SQLAlchemy를 추가하여 애플리케이션에서 SQLAlchemy를 사용할 수 있게 하는 확장 프로그램입니다. 이는 각각의 웹 요청에 바인딩된 세션, 모델 및 엔진과 같은 일반적인 객체 및 패턴을 설정하여 Flask와 SQLAlchemy를 간편하게 사용할 수 있도록 도와줍니다.
+
+## Flask Application Context
+
+SQLAlchemy만 쓰면, SQLAlchemy에만 의존성을 갖지만, Flask-SQLAlchemy를 쓰면 Flask 앱에도 의존하게 된다.
+
+그래서 멀티쓰레딩과 같은 환경에서 SQLAlchemy를 통해 데이터베이스에 접근하려고 하면, "No application found"라는 에러가 뜬다.
+
+그러므로 이런 환경에서는 app context를 주입시켜줘야 한다.
+
+https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/contexts/
