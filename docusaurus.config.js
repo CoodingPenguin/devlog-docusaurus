@@ -109,7 +109,7 @@ const config = {
         appId: '6GO6RGX99R',
         apiKey: '54416d3dc7a6a8a8f32b019a8b562fd7',
         indexName: 'coodingpenguin',
-        contextualSearch: true,
+        contextualSearch: false,
         searchParameters: {
           attributesForFaceting: [
             'type',
