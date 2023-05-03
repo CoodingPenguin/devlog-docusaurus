@@ -14,6 +14,7 @@
     left: 0;
     right: 0;
     background: linear-gradient(to right, var(--ifm-color-primary-lightest), var(--ifm-color-primary-darkest));
+    opacity: 0.9;
 }
 
 .title_description {
@@ -29,6 +30,7 @@
     opacity: 0.8;
     line-height: 1.0;
     font-weight: bolder;
+    font-family: 'Do Hyeon';
 }
 
 .title {
