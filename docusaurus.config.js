@@ -110,7 +110,15 @@ const config = {
         apiKey: '54416d3dc7a6a8a8f32b019a8b562fd7',
         indexName: 'coodingpenguin',
         contextualSearch: true,
-        searchParameters: {},
+        searchParameters: {
+          attributesForFaceting: [
+            'type',
+            'lang',
+            'language',
+            'version',
+            'docusaurus_tag',
+          ],
+        },
         searchPagePath: 'search',
         debug: false,
       },
