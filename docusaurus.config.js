@@ -22,7 +22,7 @@ const config = {
 
   // Set trailing slash option.
   // ref: https://melonicedlatte.com/2023/02/05/232900.html
-  trailingSlash: false,
+  // trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
