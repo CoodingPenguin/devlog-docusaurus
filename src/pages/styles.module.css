@@ -12,7 +12,7 @@
 
 .profile__image img {
   border-radius: 10px;
-  width: 40%;
+  width: 35%;
 }
 
 .profile__title {
@@ -27,6 +27,12 @@
   .profile {
     padding: 2rem;
   }
+  .profile__image img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .profile__image img {
     width: 80%;
   }
