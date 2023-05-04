@@ -42,9 +42,18 @@
 
 @media (max-width: 768px) {
     .title {
-      font-size: 15rem;
+        font-size: 15rem;
     }
     .description {
         font-size: 5rem;
     }
-  }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 12rem;
+    }
+    .description {
+        font-size: 4rem;
+    }
+}
