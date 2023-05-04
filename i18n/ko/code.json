@@ -44,7 +44,7 @@
     "description": "The label of the button to try again when the page crashed"
   },
   "theme.NotFound.title": {
-    "message": "🔥 404 NOT FOUND",
+    "message": "404 NOT FOUND",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
