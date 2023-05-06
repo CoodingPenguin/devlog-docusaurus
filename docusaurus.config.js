@@ -63,8 +63,9 @@ const config = {
           showLastUpdateTime: true,
         },
         blog: {
-          path: "essay",
-          routeBasePath: "/essay",
+          path: "blog",
+          routeBasePath: "/blog",
+          blogTitle: "코딩하는펭귄의 일상",
           blogSidebarCount: "ALL",
           blogSidebarTitle: "끄적이는 중",
           postsPerPage: 3,
@@ -85,7 +86,7 @@ const config = {
         sitemap: {
           changefreq: "daily",
           priority: 0.5,
-          ignorePatterns: ["/essay/tags/**", "/wiki/tags/**"],
+          ignorePatterns: ["/blog/tags/**", "/wiki/tags/**"],
           filename: "sitemap.xml",
         },
         gtag: {
@@ -141,7 +142,7 @@ const config = {
             position: "left",
           },
           {
-            to: "/essay",
+            to: "/blog",
             label: "끄적끄적",
             position: "left",
           },
