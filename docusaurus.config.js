@@ -33,6 +33,7 @@ const config = {
         sidebarPath: require.resolve("./sidebars/sidebarsOss.js"),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -59,6 +60,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars/sidebarsWiki.js"),
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
+          showLastUpdateTime: true,
         },
         blog: {
           path: "essay",
