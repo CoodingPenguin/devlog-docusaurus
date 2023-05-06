@@ -8,13 +8,17 @@
   margin: 2.5rem 0;
 }
 
+.container > p {
+  margin: 0;
+}
+
 .youtube {
   position: relative;
   width: 50%;
   height: 0;
   padding-bottom: 25%;
   overflow: hidden;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .youtube iframe {
