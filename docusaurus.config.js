@@ -35,6 +35,17 @@ const config = {
         rehypePlugins: [rehypeKatex],
       },
     ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
+        id: "book-review",
+        path: "src/pages/BookReview",
+        routeBasePath: "/book-review",
+        mdxPageComponent: "@theme/MDXPage",
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+      },
+    ],
   ],
 
   presets: [
@@ -120,6 +131,11 @@ const config = {
           {
             to: "/oss",
             label: "오픈소스로 배우기",
+            position: "left",
+          },
+          {
+            to: "/book-review",
+            label: "책 리뷰",
             position: "left",
           },
           {
