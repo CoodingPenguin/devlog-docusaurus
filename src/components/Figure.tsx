@@ -10,6 +10,7 @@ type FigureProps = {
   alt?: string;
   hasBorder?: boolean;
   width?: string;
+  background?: string;
 };
 
 const Figure = ({
@@ -19,6 +20,7 @@ const Figure = ({
   alt,
   hasBorder = false,
   width,
+  background,
 }: FigureProps) => {
   const windowSize = useWindowSize();
   const onDevice = windowSize === "mobile";
@@ -39,6 +41,7 @@ const Figure = ({
           borderRadius: "8px",
           border: hasBorder ? "1px solid #dfdfdf" : "none",
           padding: hasBorder ? "12px" : "none",
+          background: background || "white",
         }}
         width="100%"
       />
