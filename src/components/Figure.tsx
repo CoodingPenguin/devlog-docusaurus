@@ -1,6 +1,7 @@
-import React from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import isUrl from '@site/src/utils/isUrl';
+import React from "react";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import isUrl from "@site/src/utils/isUrl";
+import { useWindowSize } from "@docusaurus/theme-common";
 
 type FigureProps = {
   src: string;
@@ -8,50 +9,58 @@ type FigureProps = {
   captionLink?: string;
   alt?: string;
   hasBorder?: boolean;
-}
+  width?: string;
+};
 
-const Figure = ({src, caption, captionLink, alt, hasBorder = false}: FigureProps) => (
-  <figure
-    style={
-      {
-        textAlign: 'center',
+const Figure = ({
+  src,
+  caption,
+  captionLink,
+  alt,
+  hasBorder = false,
+  width,
+}: FigureProps) => {
+  const windowSize = useWindowSize();
+  const onDevice = windowSize === "mobile";
+
+  return (
+    <figure
+      style={{
+        textAlign: "center",
         marginLeft: 0,
-        marginRight: 0
-      }
-    }
-  >
-    <img
-      src={useBaseUrl(src)}
-      alt={alt || caption}
-      style={
-        {
-          borderRadius: '8px',
-          border: hasBorder ? '1px solid #dfdfdf' : 'none',
-          padding: hasBorder ? '12px' : 'none'
-        }
-      }
-      width='100%'
-    />
-    <figcaption
-      style={
-        {
-          fontSize: '85%',
-          fontStyle: 'italic',
-          opacity: '70%',
-          fontWeight: '600'
-        }
-      }
+        marginRight: 0,
+        width: onDevice ? "100%" : width,
+      }}
     >
-      {
-        captionLink && isUrl(captionLink) ? (
+      <img
+        src={useBaseUrl(src)}
+        alt={alt || caption}
+        style={{
+          borderRadius: "8px",
+          border: hasBorder ? "1px solid #dfdfdf" : "none",
+          padding: hasBorder ? "12px" : "none",
+        }}
+        width="100%"
+      />
+      <figcaption
+        style={{
+          fontSize: "85%",
+          fontStyle: "italic",
+          opacity: "70%",
+          fontWeight: "600",
+        }}
+      >
+        {captionLink && isUrl(captionLink) ? (
           <div>
             <span>출처: </span>
             <a href={captionLink}>{caption || captionLink}</a>
           </div>
-        ) : caption
-      }
-    </figcaption>
-  </figure>
-);
+        ) : (
+          caption
+        )}
+      </figcaption>
+    </figure>
+  );
+};
 
 export default Figure;
