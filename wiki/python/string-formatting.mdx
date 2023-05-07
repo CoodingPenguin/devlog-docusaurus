@@ -1,11 +1,11 @@
 ---
-tags: ['파이썬', '문자열']
-description: '파이썬의 대표적인 문자열 포맷팅 방식 3가지를 설명합니다.'
+tags: ["파이썬", "문자열"]
+description: "파이썬의 대표적인 문자열 포맷팅 방식 3가지"
 last_update:
   date: 12/9/2022
 ---
 
-import Figure from '@site/src/components/Figure';
+import Figure from "@site/src/components/Figure";
 
 # 파이썬 문자열 포맷팅
 
@@ -15,7 +15,7 @@ import Figure from '@site/src/components/Figure';
 integer = 10
 string = "Hi!"
 real = 3.14
- 
+
 # 방법 1. % string
 print("정수: %d, 문자열: %s, 실수: %.2f" % (integer, string, real))
 # 방법 2. format 함수
@@ -29,7 +29,7 @@ print(f"정수: {integer}, 문자열: {string}, 실수: {real:.2f}")
 f-string 기준으로 다음과 같이 `:` 다음에 포맷팅 옵션을 넣어줄 수 있다.
 
 <Figure
-  src='img/wiki/python/string-formatting/formatting-option.png'
+  src="img/wiki/python/string-formatting/formatting-option.png"
   hasBorder
 />
 
@@ -49,11 +49,11 @@ print(f'{pi:10.3f}')    #      3.142
 print(f'{pi:*<10.3f}')  # 3.142*****
 print(f'{pi:*^10.3f}')  # **3.142***
 print(f'{pi:*>10.3f}')  # *****3.142
- 
+
 million = 1000000
 print(f'{million:,}')       # 1,000,000
 print(f'{million:*>10,}')   # *1,000,000
- 
+
 thousand_with_decimal = 1000.123
 print(f'{thousand_with_decimal:,}')         # 1,000.123
 print(f'{thousand_with_decimal:*>10,}')     # *1,000.123
