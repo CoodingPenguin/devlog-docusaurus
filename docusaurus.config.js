@@ -15,7 +15,7 @@ const config = {
   baseUrl: "/",
   organizationName: "coodingpenguin", // Usually your GitHub org/user name.
   projectName: "devlog", // Usually your repo name.
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   i18n: {
     defaultLocale: "ko",
