@@ -1,20 +1,20 @@
 ---
-tags: ['vscode', 'colab', 'ngrok', 'ssh', 'cloudflared']
-description: '까먹을까봐 적어놓는 VScode 에디터에서 Colab 연결하는 방법'
+tags: ["vscode", "colab", "ngrok", "ssh", "cloudflared"]
+description: "까먹을까봐 적어놓는 VScode 에디터에서 Colab 연결하는 방법"
 last_update:
   date: 12/9/2022
 ---
 
-import Figure from '@site/src/components/Figure';
+import Figure from "@site/src/components/Figure";
 
 # VSCode에서 Colab 연결하는 방법
 
-:::note 필수 조건
+:::info 필수 조건
 **윈도우 10** 환경에서 진행했습니다.
 
--   Google Colab 계정 생성
--   Visual Studio Code 설치
--   [ngrok 계정](https://ngrok.com/) 생성
+- Google Colab 계정 생성
+- Visual Studio Code 설치
+- [ngrok 계정](https://ngrok.com/) 생성
 
 :::
 
@@ -23,12 +23,11 @@ import Figure from '@site/src/components/Figure';
 왼쪽 탭에 있는 📁 아이콘을 눌러 Google Colab과 Drive 연결을 한다.
 
 <Figure
-  src='/img/wiki/tip/how-to-connect-colab-in-vscode/google-drive-mount.png'
+  src="/img/wiki/tip/how-to-connect-colab-in-vscode/google-drive-mount.png"
   hasBorder
 />
 
 ## Step 2. 런타임 유형 GPU로 설정
-
 
 `[런타임] - [런타임 유형]`에 들어가 하드웨어 가속기를 **GPU**로 바꿔준다.
 
@@ -36,9 +35,7 @@ import Figure from '@site/src/components/Figure';
 
 [ngrok 대시보드](https://dashboard.ngrok.com/get-started/setup)에 들어가 **authtoken** 값을 복사한다.
 
-<Figure
-  src='/img/wiki/tip/how-to-connect-colab-in-vscode/ngrok-dashboard.png'
-/>
+<Figure src="/img/wiki/tip/how-to-connect-colab-in-vscode/ngrok-dashboard.png" />
 
 ## Step 4. ssh 연결 준비
 
@@ -61,7 +58,7 @@ launch_ssh_cloudflared(password=PASSWORD)
 ## Step 5. cloudflared 설치 및 config 파일 생성
 
 <Figure
-  src='/img/wiki/tip/how-to-connect-colab-in-vscode/cloudflared.png'
+  src="/img/wiki/tip/how-to-connect-colab-in-vscode/cloudflared.png"
   hasBorder
 />
 
@@ -71,16 +68,14 @@ launch_ssh_cloudflared(password=PASSWORD)
 
 ## Step 6. VSCode에 Remote - SSH 확장 프로그램 설치
 
-<Figure
-  src='/img/wiki/tip/how-to-connect-colab-in-vscode/remote-ssh-vscode-extension.png'
-/>
+<Figure src="/img/wiki/tip/how-to-connect-colab-in-vscode/remote-ssh-vscode-extension.png" />
 
 Visual Studio Code로 들어가 **Remote - SSH**를 설치해준다.
 
 ## Step 7. Remote - SSH로 호스트랑 연결
 
 <Figure
-  src='/img/wiki/tip/how-to-connect-colab-in-vscode/connect-to-host-by-ssh.png'
+  src="/img/wiki/tip/how-to-connect-colab-in-vscode/connect-to-host-by-ssh.png"
   hasBorder
 />
 
