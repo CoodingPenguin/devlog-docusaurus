@@ -6,9 +6,9 @@
 
 /* 1. 임포트 */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
 /* 2. Infima 변수의 기본값 오버라이드 */
 :root {
@@ -27,13 +27,17 @@
   --ifm-font-size-base: 100%;
   --ifm-line-height-base: 1.8;
   --ifm-blockquote-color: #57606a;
-  --ifm-font-family-base: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --ifm-font-family-base: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --ifm-list-left-padding: 1.5rem;
   --ifm-container-width-xxl: 1600px;
+  --ifm-navbar-background-color: rgba(248, 249, 250, 255);
 }
 
 /* 다크 모드의 경우 라이트 모드보다 더 밝은 색을 선택하는 게 좋음 */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #788bff;
   --ifm-color-primary-dark: #7185ff;
   --ifm-color-primary-darker: #6278ff;
@@ -42,6 +46,7 @@
   --ifm-color-primary-lighter: #8f9eff;
   --ifm-color-primary-lightest: #9eabff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-navbar-background-color: rgba(72, 72, 73, 255);
 }
 
 /* 3. 그 외 수정 */
@@ -89,7 +94,7 @@
 }
 
 .header-link::before {
-  content: '';
+  content: "";
   width: 30px;
   height: 30px;
   display: flex;
@@ -100,16 +105,16 @@
   background-image: url("/static/icon/github-black.svg");
 }
 
-[data-theme='dark']  .header-github-link::before {
+[data-theme="dark"] .header-github-link::before {
   background-image: url("/static/icon/github-white.svg");
 }
 
 .header-instagram-link::before {
-  background-image: url("/static/icon/instagram-black.svg") ;
+  background-image: url("/static/icon/instagram-black.svg");
 }
 
-[data-theme='dark'] .header-instagram-link::before {
-  background-image: url("/static/icon/instagram-white.svg") ;
+[data-theme="dark"] .header-instagram-link::before {
+  background-image: url("/static/icon/instagram-white.svg");
 }
 
 /* 3.2. 마크다운 본문 */
@@ -132,11 +137,11 @@
 }
 
 .pagination-nav__link--next .pagination-nav__label::after {
-  content: ' →';
+  content: " →";
 }
 
 .pagination-nav__link--prev .pagination-nav__label::before {
-  content: '← ';
+  content: "← ";
 }
 
 .markdown table {
@@ -150,8 +155,9 @@ code {
   color: #eb5757;
   margin: 0 0.125rem;
   font-size: 85%;
-  background: rgba(135,131,120,0.15);
-  font-family: 'Fira Code', "Pretendard Variable", Pretendard, -apple-system, monospace;
+  background: rgba(135, 131, 120, 0.15);
+  font-family: "Fira Code", "Pretendard Variable", Pretendard, -apple-system,
+    monospace;
 }
 
 .theme-code-block {
@@ -167,7 +173,7 @@ blockquote {
   font-style: italic;
 }
 
-[data-theme='dark'] blockquote {
+[data-theme="dark"] blockquote {
   color: white;
   opacity: 75%;
 }
@@ -177,7 +183,7 @@ del {
   text-decoration-color: rgba(0, 0, 0, 0.3);
 }
 
-[data-theme='dark'] del {
+[data-theme="dark"] del {
   color: rgba(255, 255, 255, 0.6);
   text-decoration-color: rgba(255, 255, 255, 0.3);
 }
@@ -200,6 +206,5 @@ del:hover {
 }
 
 .table-of-contents {
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
-
