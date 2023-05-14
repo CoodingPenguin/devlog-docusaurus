@@ -56,7 +56,9 @@ const Figure = ({
         {captionLink && isUrl(captionLink) ? (
           <div>
             <span>출처: </span>
-            <a href={captionLink}>{caption || captionLink}</a>
+            <a href={captionLink} target="_blank">
+              {caption || captionLink}
+            </a>
           </div>
         ) : (
           caption
