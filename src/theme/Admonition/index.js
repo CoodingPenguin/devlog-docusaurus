@@ -1,86 +1,82 @@
-import React from 'react';
-import clsx from 'clsx';
-import {ThemeClassNames} from '@docusaurus/theme-common';
-import Translate from '@docusaurus/Translate';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import { ThemeClassNames } from "@docusaurus/theme-common";
+import Translate from "@docusaurus/Translate";
+import styles from "./styles.module.css";
+
 function NoteIcon() {
-  return (
-    <span>📌</span>
-  );
+  return <span>📄</span>;
 }
 function TipIcon() {
-  return (
-    <span>💡</span>
-  );
+  return <span>💡</span>;
 }
 function DangerIcon() {
-  return (
-    <span>🔥</span>
-  );
+  return <span>🔥</span>;
 }
 function InfoIcon() {
-  return (
-    <span>ℹ️</span>
-  );
+  return <span>ℹ️</span>;
 }
 function CautionIcon() {
-  return (
-    <span>⚠️</span>
-  );
+  return <span>⚠️</span>;
 }
 // eslint-disable-next-line @typescript-eslint/consistent-indexed-object-style
 const AdmonitionConfigs = {
   note: {
-    infimaClassName: 'secondary',
+    infimaClassName: "secondary",
     iconComponent: NoteIcon,
     label: (
       <Translate
         id="theme.admonition.note"
-        description="The default label used for the Note admonition (:::note)">
+        description="The default label used for the Note admonition (:::note)"
+      >
         note
       </Translate>
     ),
   },
   tip: {
-    infimaClassName: 'success',
+    infimaClassName: "success",
     iconComponent: TipIcon,
     label: (
       <Translate
         id="theme.admonition.tip"
-        description="The default label used for the Tip admonition (:::tip)">
+        description="The default label used for the Tip admonition (:::tip)"
+      >
         tip
       </Translate>
     ),
   },
   danger: {
-    infimaClassName: 'danger',
+    infimaClassName: "danger",
     iconComponent: DangerIcon,
     label: (
       <Translate
         id="theme.admonition.danger"
-        description="The default label used for the Danger admonition (:::danger)">
+        description="The default label used for the Danger admonition (:::danger)"
+      >
         danger
       </Translate>
     ),
   },
   info: {
-    infimaClassName: 'info',
+    infimaClassName: "info",
     iconComponent: InfoIcon,
     label: (
       <Translate
         id="theme.admonition.info"
-        description="The default label used for the Info admonition (:::info)">
+        description="The default label used for the Info admonition (:::info)"
+      >
         info
       </Translate>
     ),
   },
   caution: {
-    infimaClassName: 'warning',
+    infimaClassName: "warning",
     iconComponent: CautionIcon,
     label: (
       <Translate
         id="theme.admonition.caution"
-        description="The default label used for the Caution admonition (:::caution)">
+        description="The default label used for the Caution admonition (:::caution)"
+      >
         caution
       </Translate>
     ),
@@ -88,10 +84,10 @@ const AdmonitionConfigs = {
 };
 // Legacy aliases, undocumented but kept for retro-compatibility
 const aliases = {
-  secondary: 'note',
-  important: 'info',
-  success: 'tip',
-  warning: 'danger',
+  secondary: "note",
+  important: "info",
+  success: "tip",
+  warning: "danger",
 };
 function getAdmonitionConfig(unsafeType) {
   const type = aliases[unsafeType] ?? unsafeType;
@@ -100,7 +96,7 @@ function getAdmonitionConfig(unsafeType) {
     return config;
   }
   console.warn(
-    `No admonition config found for admonition type "${type}". Using Info as fallback.`,
+    `No admonition config found for admonition type "${type}". Using Info as fallback.`
   );
   return AdmonitionConfigs.info;
 }
@@ -110,8 +106,7 @@ function extractMDXAdmonitionTitle(children) {
   const items = React.Children.toArray(children);
   const mdxAdmonitionTitle = items.find(
     (item) =>
-      React.isValidElement(item) &&
-      item.props?.mdxType === 'mdxAdmonitionTitle',
+      React.isValidElement(item) && item.props?.mdxType === "mdxAdmonitionTitle"
   );
   const rest = <>{items.filter((item) => item !== mdxAdmonitionTitle)}</>;
   return {
@@ -120,7 +115,9 @@ function extractMDXAdmonitionTitle(children) {
   };
 }
 function processAdmonitionProps(props) {
-  const {mdxAdmonitionTitle, rest} = extractMDXAdmonitionTitle(props.children);
+  const { mdxAdmonitionTitle, rest } = extractMDXAdmonitionTitle(
+    props.children
+  );
   return {
     ...props,
     title: props.title ?? mdxAdmonitionTitle,
@@ -128,20 +125,26 @@ function processAdmonitionProps(props) {
   };
 }
 export default function Admonition(props) {
-  const {children, type, title, icon: iconProp} = processAdmonitionProps(props);
+  const {
+    children,
+    type,
+    title,
+    icon: iconProp,
+  } = processAdmonitionProps(props);
   const typeConfig = getAdmonitionConfig(type);
   const titleLabel = title ?? typeConfig.label;
-  const {iconComponent: IconComponent} = typeConfig;
+  const { iconComponent: IconComponent } = typeConfig;
   const icon = iconProp ?? <IconComponent />;
   return (
     <div
       className={clsx(
         ThemeClassNames.common.admonition,
         ThemeClassNames.common.admonitionType(props.type),
-        'alert',
+        "alert",
         `alert--${typeConfig.infimaClassName}`,
-        styles.admonition,
-      )}>
+        styles.admonition
+      )}
+    >
       <div className={styles.admonitionHeading}>
         <span className={styles.admonitionIcon}>{icon}</span>
         {titleLabel}
