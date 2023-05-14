@@ -69,7 +69,7 @@ const config = {
           blogDescription: "조금씩 끄적여보는 일상 에세이",
           blogSidebarCount: "ALL",
           blogSidebarTitle: "끄적이는 중",
-          postsPerPage: 3,
+          postsPerPage: 10,
           showReadingTime: false,
           feedOptions: {
             type: "all",
