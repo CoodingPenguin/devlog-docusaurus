@@ -27,24 +27,13 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "oss",
-        path: "oss",
-        routeBasePath: "/oss",
-        sidebarPath: require.resolve("./sidebars/sidebarsOss.js"),
+        id: "bookmark",
+        path: "bookmark",
+        routeBasePath: "/bookmark",
+        sidebarPath: require.resolve("./sidebars/sidebarsBookmark.js"),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
         showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
-        id: "book-review",
-        path: "src/pages/BookReview",
-        routeBasePath: "/book-review",
-        mdxPageComponent: "@theme/MDXPage",
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
       },
     ],
   ],
@@ -133,13 +122,8 @@ const config = {
             position: "left",
           },
           {
-            to: "/oss",
-            label: "오픈소스로 배우기",
-            position: "left",
-          },
-          {
-            to: "/book-review",
-            label: "책 리뷰",
+            to: "/bookmark",
+            label: "북마크",
             position: "left",
           },
           {

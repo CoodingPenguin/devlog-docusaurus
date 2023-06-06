@@ -1,0 +1,22 @@
+---
+title: How Discord Stores Trillions of Messages
+---
+
+# [How Discord Stores Trillions of Messages](https://discord.com/blog/how-discord-stores-trillions-of-messages)
+
+```sql
+CREATE TABLE messages (
+   channel_id bigint,
+   bucket int,
+   message_id bigint,
+   author_id bigint,
+   content text,
+   PRIMARY KEY ((channel_id, bucket), message_id)
+) WITH CLUSTERING ORDER BY (message_id DESC);
+```
+
+- Cassandra의 메시지 스키마로, 실제 컬럼은 위의 컬럼보다 10개의 컬럼이 더 있음.
+  - 여기서 사용하는 모든 ID는 [Snowflake](https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake)로, 시간순으로 정렬.
+  - 그리고 채널 ID와 버킷으로 데이터를 파티셔닝.
+    - Cassandra에서 파티션 크기가 100MB가 넘으면 성능 이슈가 있음.
+    - 그래서 파티션 크기를 100MB 이하로 유지하기 위해 10일치 메시지를 버킷에 저장하도록 함.
