@@ -1,9 +1,10 @@
 .blogLayout {
-    max-width: var(--ifm-container-width-xxl);
-    margin: 0 auto;
-    padding: 0 1rem;
+  min-width: var(--ifm-container-width-xxl);
+  max-width: var(--ifm-container-width-xxl);
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .blogToc {
-    padding-left: 3rem;
+  padding-left: 3rem;
 }
