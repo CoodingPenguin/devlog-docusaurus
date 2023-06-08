@@ -1,8 +1,16 @@
 .blogLayout {
   min-width: var(--ifm-container-width-xxl);
   max-width: var(--ifm-container-width-xxl);
-  margin: 0 auto;
   padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 996px) {
+  .blogLayout {
+    min-width: 0px;
+    max-width: 996px;
+    margin: 0;
+  }
 }
 
 .blogToc {
