@@ -1,5 +1,5 @@
 .blogLayout {
-  min-width: var(--ifm-container-width-xxl);
+  min-width: 996px;
   max-width: var(--ifm-container-width-xxl);
   padding: 0 1rem;
   margin: 0 auto;
