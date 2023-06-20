@@ -32,7 +32,6 @@
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --ifm-list-left-padding: 1.5rem;
-  --ifm-container-width-xxl: 1600px;
   --ifm-navbar-background-color: rgba(248, 249, 250, 255);
 }
 
