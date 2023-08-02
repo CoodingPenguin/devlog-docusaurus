@@ -22,21 +22,7 @@ const config = {
     locales: ["ko"],
   },
 
-  plugins: [
-    pluginImageZoom,
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "bookmark",
-        path: "bookmark",
-        routeBasePath: "/bookmark",
-        sidebarPath: require.resolve("./sidebars/sidebarsBookmark.js"),
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
-        showLastUpdateTime: true,
-      },
-    ],
-  ],
+  plugins: [pluginImageZoom],
 
   presets: [
     [
@@ -119,11 +105,6 @@ const config = {
           {
             to: "/wiki",
             label: "개발위키",
-            position: "left",
-          },
-          {
-            to: "/bookmark",
-            label: "북마크",
             position: "left",
           },
           {
