@@ -222,6 +222,7 @@ const sidebars = {
           ],
         },
         "etc/docusaurus",
+        "etc/obsidian",
         {
           type: "category",
           label: "🍯 Tips",
