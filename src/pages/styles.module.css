@@ -11,16 +11,16 @@
 }
 
 .profile__image img {
-  border-radius: 10px;
+  border-radius: 5%;
   width: 35%;
 }
 
 .profile__title {
-  font-size: 2rem;
+  font-size: 2.125rem;
 }
 
 .profile__description {
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 996px) {
