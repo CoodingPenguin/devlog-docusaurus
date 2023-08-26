@@ -1,0 +1,19 @@
+---
+tags: ["cassandra", "data-storage"]
+last_update:
+  date: 8/27/2023
+---
+
+# 👁️ Cassandra
+
+> Cassandra는 **scalability와 high availability에 최적화된 대표적인 분산형 Data storage**입니다. Consistent hashing을 이용한 Ring 구조와 Gossip protocol을 구현하였으며, 때문에 각 노드 장비들의 추가, 제거 등이 자유롭고, 데이터센터까지 고려 할 수 있는 데이터 복제 정책을 사용하여 안정성 측면에서 많은 장점을 가지고 있습니다. Cassandra를 이용하면 Sharding을 고려해야 할 필요도 없고 Master-Slave 와 같은 정책이 없이도 장애에 대응할 수 있으며, 필요에 따라 장비들을 늘리고 줄이는 데 큰 비용이 들지 않습니다.
+>
+> 🔗 [Apache Cassandra 톺아보기 - 1편 | NHN Cloud Meetup!](https://meetup.nhncloud.com/posts/58)
+
+## 🗞️ Articles
+
+- [How Discord Stores Billions of Messages | Discord Blog](https://discord.com/blog/how-discord-stores-billions-of-messages)
+  > - 2015년 5월에 Discord를 출시, MongoDB 레플리카 셋 1개로 운영을 시작함.
+  > - 시간이 지나 하루 메시지가 1억 개가 넘으면서 Cassandra로 마이그레이션을 진행.
+  > - (2017년 당시) 12개의 노드 클러스터와 레플리카 팩터를 3으로 설정하여 운영.
+- [How Discord Stores Trillions of Messages | Discord Blog](https://discord.com/blog/how-discord-stores-trillions-of-messages)
