@@ -14,18 +14,18 @@ const sidebars = {
       type: "category",
       label: "🖥️ Computer Science",
       link: {
-        type: "generated-index",
-        slug: "/computer-science",
+        type: "doc",
+        id: "computer-science",
       },
       collapsed: true,
       items: [
         {
           type: "category",
           label: "🔻 Algorithm",
-          description: "모든 곳에서 쓰이는, 필수 불가결한 분산 시스템",
+          description: "개발자 은퇴 전까지 계속 공부해야 하는 알고리즘",
           link: {
-            type: "generated-index",
-            slug: "/algorithm",
+            type: "doc",
+            id: "computer-science/algorithm",
           },
           items: [
             {
@@ -37,6 +37,7 @@ const sidebars = {
         {
           type: "category",
           label: "💾 Database",
+          description: "빅데이터도 중요하지만 근본은 스몰데이터",
           link: {
             type: "doc",
             id: "computer-science/database",
