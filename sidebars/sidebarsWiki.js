@@ -188,7 +188,7 @@ const sidebars = {
       items: [
         {
           type: "category",
-          label: "🔮 Frontend",
+          label: "🎨 Frontend",
           link: {
             type: "doc",
             id: "development/frontend",
@@ -229,7 +229,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "🚥 Backend",
+          label: "☁️ Backend",
           link: {
             type: "doc",
             id: "development/backend",
@@ -270,7 +270,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "🔄 Devops",
+          label: "️🔄 Devops",
           link: {
             type: "doc",
             id: "development/devops",
