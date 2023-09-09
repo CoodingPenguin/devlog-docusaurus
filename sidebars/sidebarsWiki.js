@@ -382,7 +382,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "🪜 Scala",
+          label: "⚖️ Scala",
           link: {
             type: "doc",
             id: "programming-language/scala",
