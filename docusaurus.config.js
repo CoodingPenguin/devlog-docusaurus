@@ -41,10 +41,10 @@ const config = {
           path: "blog",
           routeBasePath: "/blog",
           blogTitle: "코딩하는펭귄의 일상",
-          blogDescription: "조금씩 끄적여보는 일상 에세이",
+          blogDescription: "조금씩 끄적여보는 개발 에세이",
           blogSidebarCount: "ALL",
           blogSidebarTitle: "끄적이는 중",
-          postsPerPage: 10,
+          postsPerPage: 1,
           showReadingTime: false,
           feedOptions: {
             type: "all",
