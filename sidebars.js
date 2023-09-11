@@ -2,13 +2,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  sidebar: [
-    "index",
-    {
-      type: "html",
-      value:
-        '<hr style="margin: 12px 0; background: var(--ifm-toc-border-color);" />',
-    },
+  wikiSidebar: [
     {
       type: "category",
       label: "👩‍💻 Development",

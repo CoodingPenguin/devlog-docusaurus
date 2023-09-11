@@ -32,7 +32,7 @@ const config = {
         docs: {
           path: "wiki",
           routeBasePath: "/wiki",
-          sidebarPath: require.resolve("./sidebars/sidebarsWiki.js"),
+          sidebarPath: 'sidebars.js',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           showLastUpdateTime: true,
