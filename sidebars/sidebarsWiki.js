@@ -414,7 +414,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "🎸 ETC.",
+      label: "🔍 And More",
       collapsed: true,
       items: [
         {
