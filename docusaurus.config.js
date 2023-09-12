@@ -108,7 +108,7 @@ const config = {
             position: "left",
           },
           {
-            to: "/blog",
+            to: "/blog/archive",
             label: "끄적끄적",
             position: "left",
           },
