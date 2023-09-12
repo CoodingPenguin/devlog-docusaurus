@@ -40,10 +40,12 @@ function listPostsByYears(blogPosts) {
     const yearPosts = posts.get(year) ?? [];
     return posts.set(year, [post, ...yearPosts]);
   }, new Map());
-  return Array.from(postsByYear, ([year, posts]) => ({
+  const result = Array.from(postsByYear, ([year, posts]) => ({
     year,
     posts,
   }));
+  result.sort((a, b) => b.year - a.year);
+  return result;
 }
 export default function BlogArchive({archive}) {
   const title = translate({
