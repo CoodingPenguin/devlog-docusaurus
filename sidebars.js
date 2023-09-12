@@ -107,7 +107,7 @@ const sidebars = {
     {
       type: "html",
       value:
-          '<hr style="margin: 12px 0; background: var(--ifm-toc-border-color);" />',
+          '<hr style="margin: 12px 0; background: var(--ifm-color-emphasis-300);" />',
     },
     {
       type: "category",
@@ -265,7 +265,7 @@ const sidebars = {
     {
       type: "html",
       value:
-          '<hr style="margin: 12px 0; background: var(--ifm-toc-border-color);" />',
+          '<hr style="margin: 12px 0; background: var(--ifm-color-emphasis-300);" />',
     },
     {
       type: "category",
@@ -393,7 +393,7 @@ const sidebars = {
     {
       type: "html",
       value:
-          '<hr style="margin: 12px 0; background: var(--ifm-toc-border-color);" />',
+          '<hr style="margin: 12px 0; background: var(--ifm-color-emphasis-300);" />',
     },
     {
       type: "category",
