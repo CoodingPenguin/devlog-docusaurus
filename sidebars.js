@@ -193,7 +193,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "💬 Language",
+      label: "💬 Programming Language",
       link: {
         type: "doc",
         id: "programming-language",
