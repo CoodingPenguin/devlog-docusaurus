@@ -10,7 +10,7 @@ last_update:
 
 :::tip 애플리케이션 객체를 여러 개 두면 안 될까?
 
-이렇게 되면 각자 다른 설정값을 가져야 하고 일르 WSGI 계층에서 관리를 해야 한다. 이걸 블루프린트로 관리를 하게 되면 Flask 계층에서 쉽게 관리할 수 있고 설정값을 따로 관리하지 않고 공유할 수 있다.
+이렇게 되면 각자 다른 설정값을 가져야 하고 이를 WSGI 계층에서 관리를 해야 한다. 이걸 블루프린트로 관리를 하게 되면 Flask 계층에서 쉽게 관리할 수 있고 설정값을 따로 관리하지 않고 공유할 수 있다.
 
 :::
 
@@ -22,14 +22,14 @@ class flask.Blueprint(
     root_path=None, cli_group=<object object>)
 ```
 
-- `name (str)` : 블루프린트 이름으로, 각 엔드포인트 이름 앞에 접두사로 추가된다.
-- `import_name (str)` : 블루프린트 패키지 이름으로, 블루프린트의 `root_path`를 찾는데 사용한다. 보통 여기에 `__name__`을 사용한다.
-- `static_folder (Optional[Union[str,os.PathLike]])` : 정적 파일을 저장된 폴더로, 폴더 경로는 `root_path`를 기준으로 하는 상대 경로이다. 기본적으로 블루프린트의 정적 파일은 비활성화되어 있다.
-- `static_url_path (Optional[str])` : 정적 파일을 제공할 URL이다. 기본값은 `static_folder`이다.
-- `template_folder (Optional[str])` : 템플릿이 저장된 폴더로, `static_folder`의 동작과 비슷한다. 앱의 템플릿 폴더에 있는 템플릿보다 우선순위가 낫다.
-- `url_prefix (Optional[str])` : 모든 블루프린트 URL에 추가할 접두사이다.
-- `subdomain (Optional[str])` : 하위 도메인으로, 기본적으로 블루프린트 경로와 일치한다.
-- `root_path (Optional[str])` : 기본적으로 `import_name`을 기준으로 경로를 자동으로 설정한다. 특정 상황에서 실패할 수 있으므로 수동으로도 설정이 가능하다.
+- `name`_(str)_ : 블루프린트 이름으로, 각 엔드포인트 이름 앞에 접두사로 추가된다.
+- `import_name`_(str)_ : 블루프린트 패키지 이름으로, 블루프린트의 `root_path`를 찾는데 사용한다. 보통 여기에 `__name__`을 사용한다.
+- `static_folder`_(Optional[Union[str,os.PathLike]])_ : 정적 파일을 저장된 폴더로, 폴더 경로는 `root_path`를 기준으로 하는 상대 경로이다. 기본적으로 블루프린트의 정적 파일은 비활성화되어 있다.
+- `static_url_path`_(Optional[str])_ : 정적 파일을 제공할 URL이다. 기본값은 `static_folder`이다.
+- `template_folder`_(Optional[str])_ : 템플릿이 저장된 폴더로, `static_folder`의 동작과 비슷한다. 앱의 템플릿 폴더에 있는 템플릿보다 우선순위가 낫다.
+- `url_prefix`_(Optional[str])_ : 모든 블루프린트 URL에 추가할 접두사이다.
+- `subdomain`_(Optional[str])_ : 하위 도메인으로, 기본적으로 블루프린트 경로와 일치한다.
+- `root_path`_Optional[str])_ : 기본적으로 `import_name`을 기준으로 경로를 자동으로 설정한다. 특정 상황에서 실패할 수 있으므로 수동으로도 설정이 가능하다.
 
 ## 블루프린트 생성 및 등록
 블루프린트 객체는 `Blueprint` 클래스를 사용해 객체를 생성하고, `@bp.route` 데코레이터로 View 함수를 등록한다.
