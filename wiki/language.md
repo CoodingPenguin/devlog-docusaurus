@@ -1,7 +1,7 @@
 ---
 tags: ["programming-language"]
 last_update:
-    date: 2023-09-03
+  date: 2023-09-03
 ---
 
 # 💬 Programming Language
